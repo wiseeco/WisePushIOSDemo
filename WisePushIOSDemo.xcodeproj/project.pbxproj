@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B9DE537B1766FFD500335848 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DE537A1766FFD500335848 /* UIKit.framework */; };
+		B9DE537D1766FFD500335848 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DE537C1766FFD500335848 /* Foundation.framework */; };
+		B9DE537F1766FFD500335848 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DE537E1766FFD500335848 /* CoreGraphics.framework */; };
+		B9DE53851766FFD500335848 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9DE53831766FFD500335848 /* InfoPlist.strings */; };
+		B9DE53871766FFD500335848 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9DE53861766FFD500335848 /* main.m */; };
+		B9DE538B1766FFD500335848 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9DE538A1766FFD500335848 /* AppDelegate.m */; };
+		B9DE538D1766FFD500335848 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B9DE538C1766FFD500335848 /* Default.png */; };
+		B9DE538F1766FFD500335848 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9DE538E1766FFD500335848 /* Default@2x.png */; };
+		B9DE53911766FFD500335848 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9DE53901766FFD500335848 /* Default-568h@2x.png */; };
+		B9DE53941766FFD500335848 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9DE53931766FFD500335848 /* ViewController.m */; };
+		B9DE53971766FFD500335848 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9DE53951766FFD500335848 /* ViewController.xib */; };
+		B9DE539F1767002600335848 /* wisepush_white.png in Resources */ = {isa = PBXBuildFile; fileRef = B9DE539E1767002600335848 /* wisepush_white.png */; };
+		B9DE53BB1767066C00335848 /* logging_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = B9DE53A31767066C00335848 /* logging_mosq.c */; };
+		B9DE53BC1767066C00335848 /* memory_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = B9DE53A51767066C00335848 /* memory_mosq.c */; };
+		B9DE53BD1767066C00335848 /* messages_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = B9DE53A71767066C00335848 /* messages_mosq.c */; };
+		B9DE53BE1767066C00335848 /* mosquitto.c in Sources */ = {isa = PBXBuildFile; fileRef = B9DE53A91767066C00335848 /* mosquitto.c */; };
+		B9DE53BF1767066C00335848 /* net_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = B9DE53AD1767066C00335848 /* net_mosq.c */; };
+		B9DE53C01767066C00335848 /* read_handle.c in Sources */ = {isa = PBXBuildFile; fileRef = B9DE53AF1767066C00335848 /* read_handle.c */; };
+		B9DE53C11767066C00335848 /* read_handle_client.c in Sources */ = {isa = PBXBuildFile; fileRef = B9DE53B11767066C00335848 /* read_handle_client.c */; };
+		B9DE53C21767066C00335848 /* read_handle_shared.c in Sources */ = {isa = PBXBuildFile; fileRef = B9DE53B21767066C00335848 /* read_handle_shared.c */; };
+		B9DE53C31767066C00335848 /* send_client_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = B9DE53B31767066C00335848 /* send_client_mosq.c */; };
+		B9DE53C41767066C00335848 /* send_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = B9DE53B41767066C00335848 /* send_mosq.c */; };
+		B9DE53C51767066C00335848 /* thread_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = B9DE53B61767066C00335848 /* thread_mosq.c */; };
+		B9DE53C61767066C00335848 /* util_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = B9DE53B71767066C00335848 /* util_mosq.c */; };
+		B9DE53C71767066C00335848 /* will_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = B9DE53B91767066C00335848 /* will_mosq.c */; };
+		B9DE53CF1767069D00335848 /* getMacAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = B9DE53CA1767069D00335848 /* getMacAddress.m */; };
+		B9DE53D01767069D00335848 /* MosquittoClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B9DE53CC1767069D00335848 /* MosquittoClient.m */; };
+		B9DE53D11767069D00335848 /* MosquittoMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B9DE53CE1767069D00335848 /* MosquittoMessage.m */; };
+		B9DE53D41767112600335848 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B9DE53D21767112600335848 /* Icon.png */; };
+		B9DE53D51767112600335848 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9DE53D31767112600335848 /* Icon@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B9DE53771766FFD500335848 /* WisePushIOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WisePushIOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9DE537A1766FFD500335848 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B9DE537C1766FFD500335848 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B9DE537E1766FFD500335848 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B9DE53821766FFD500335848 /* WisePushIOSDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WisePushIOSDemo-Info.plist"; sourceTree = "<group>"; };
+		B9DE53841766FFD500335848 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B9DE53861766FFD500335848 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9DE53881766FFD500335848 /* WisePushIOSDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WisePushIOSDemo-Prefix.pch"; sourceTree = "<group>"; };
+		B9DE53891766FFD500335848 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B9DE538A1766FFD500335848 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B9DE538C1766FFD500335848 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B9DE538E1766FFD500335848 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B9DE53901766FFD500335848 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B9DE53921766FFD500335848 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B9DE53931766FFD500335848 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B9DE53961766FFD500335848 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		B9DE539E1767002600335848 /* wisepush_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wisepush_white.png; sourceTree = "<group>"; };
+		B9DE53A11767066C00335848 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		B9DE53A21767066C00335848 /* dummypthread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dummypthread.h; sourceTree = "<group>"; };
+		B9DE53A31767066C00335848 /* logging_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = logging_mosq.c; sourceTree = "<group>"; };
+		B9DE53A41767066C00335848 /* logging_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logging_mosq.h; sourceTree = "<group>"; };
+		B9DE53A51767066C00335848 /* memory_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = memory_mosq.c; sourceTree = "<group>"; };
+		B9DE53A61767066C00335848 /* memory_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memory_mosq.h; sourceTree = "<group>"; };
+		B9DE53A71767066C00335848 /* messages_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = messages_mosq.c; sourceTree = "<group>"; };
+		B9DE53A81767066C00335848 /* messages_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = messages_mosq.h; sourceTree = "<group>"; };
+		B9DE53A91767066C00335848 /* mosquitto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mosquitto.c; sourceTree = "<group>"; };
+		B9DE53AA1767066C00335848 /* mosquitto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mosquitto.h; sourceTree = "<group>"; };
+		B9DE53AB1767066C00335848 /* mosquitto_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mosquitto_internal.h; sourceTree = "<group>"; };
+		B9DE53AC1767066C00335848 /* mqtt3_protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mqtt3_protocol.h; sourceTree = "<group>"; };
+		B9DE53AD1767066C00335848 /* net_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = net_mosq.c; sourceTree = "<group>"; };
+		B9DE53AE1767066C00335848 /* net_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net_mosq.h; sourceTree = "<group>"; };
+		B9DE53AF1767066C00335848 /* read_handle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = read_handle.c; sourceTree = "<group>"; };
+		B9DE53B01767066C00335848 /* read_handle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = read_handle.h; sourceTree = "<group>"; };
+		B9DE53B11767066C00335848 /* read_handle_client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = read_handle_client.c; sourceTree = "<group>"; };
+		B9DE53B21767066C00335848 /* read_handle_shared.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = read_handle_shared.c; sourceTree = "<group>"; };
+		B9DE53B31767066C00335848 /* send_client_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = send_client_mosq.c; sourceTree = "<group>"; };
+		B9DE53B41767066C00335848 /* send_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = send_mosq.c; sourceTree = "<group>"; };
+		B9DE53B51767066C00335848 /* send_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = send_mosq.h; sourceTree = "<group>"; };
+		B9DE53B61767066C00335848 /* thread_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = thread_mosq.c; sourceTree = "<group>"; };
+		B9DE53B71767066C00335848 /* util_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = util_mosq.c; sourceTree = "<group>"; };
+		B9DE53B81767066C00335848 /* util_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util_mosq.h; sourceTree = "<group>"; };
+		B9DE53B91767066C00335848 /* will_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = will_mosq.c; sourceTree = "<group>"; };
+		B9DE53BA1767066C00335848 /* will_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = will_mosq.h; sourceTree = "<group>"; };
+		B9DE53C91767069D00335848 /* getMacAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getMacAddress.h; sourceTree = "<group>"; };
+		B9DE53CA1767069D00335848 /* getMacAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = getMacAddress.m; sourceTree = "<group>"; };
+		B9DE53CB1767069D00335848 /* MosquittoClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MosquittoClient.h; sourceTree = "<group>"; };
+		B9DE53CC1767069D00335848 /* MosquittoClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MosquittoClient.m; sourceTree = "<group>"; };
+		B9DE53CD1767069D00335848 /* MosquittoMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MosquittoMessage.h; sourceTree = "<group>"; };
+		B9DE53CE1767069D00335848 /* MosquittoMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MosquittoMessage.m; sourceTree = "<group>"; };
+		B9DE53D21767112600335848 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		B9DE53D31767112600335848 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9DE53741766FFD500335848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9DE537B1766FFD500335848 /* UIKit.framework in Frameworks */,
+				B9DE537D1766FFD500335848 /* Foundation.framework in Frameworks */,
+				B9DE537F1766FFD500335848 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9DE536E1766FFD500335848 = {
+			isa = PBXGroup;
+			children = (
+				B9DE53801766FFD500335848 /* WisePushIOSDemo */,
+				B9DE53791766FFD500335848 /* Frameworks */,
+				B9DE53781766FFD500335848 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B9DE53781766FFD500335848 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9DE53771766FFD500335848 /* WisePushIOSDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9DE53791766FFD500335848 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9DE537A1766FFD500335848 /* UIKit.framework */,
+				B9DE537C1766FFD500335848 /* Foundation.framework */,
+				B9DE537E1766FFD500335848 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9DE53801766FFD500335848 /* WisePushIOSDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B9DE53A01767066C00335848 /* libmosquitto */,
+				B9DE53C81767069D00335848 /* mqtt_addon */,
+				B9DE53891766FFD500335848 /* AppDelegate.h */,
+				B9DE538A1766FFD500335848 /* AppDelegate.m */,
+				B9DE53921766FFD500335848 /* ViewController.h */,
+				B9DE53931766FFD500335848 /* ViewController.m */,
+				B9DE53951766FFD500335848 /* ViewController.xib */,
+				B9DE539D1767002600335848 /* Resource */,
+				B9DE53811766FFD500335848 /* Supporting Files */,
+			);
+			name = WisePushIOSDemo;
+			path = WisePush;
+			sourceTree = "<group>";
+		};
+		B9DE53811766FFD500335848 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9DE53821766FFD500335848 /* WisePushIOSDemo-Info.plist */,
+				B9DE53831766FFD500335848 /* InfoPlist.strings */,
+				B9DE53861766FFD500335848 /* main.m */,
+				B9DE53881766FFD500335848 /* WisePushIOSDemo-Prefix.pch */,
+				B9DE538C1766FFD500335848 /* Default.png */,
+				B9DE538E1766FFD500335848 /* Default@2x.png */,
+				B9DE53901766FFD500335848 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9DE539D1767002600335848 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B9DE53D21767112600335848 /* Icon.png */,
+				B9DE53D31767112600335848 /* Icon@2x.png */,
+				B9DE539E1767002600335848 /* wisepush_white.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		B9DE53A01767066C00335848 /* libmosquitto */ = {
+			isa = PBXGroup;
+			children = (
+				B9DE53A11767066C00335848 /* config.h */,
+				B9DE53A21767066C00335848 /* dummypthread.h */,
+				B9DE53A31767066C00335848 /* logging_mosq.c */,
+				B9DE53A41767066C00335848 /* logging_mosq.h */,
+				B9DE53A51767066C00335848 /* memory_mosq.c */,
+				B9DE53A61767066C00335848 /* memory_mosq.h */,
+				B9DE53A71767066C00335848 /* messages_mosq.c */,
+				B9DE53A81767066C00335848 /* messages_mosq.h */,
+				B9DE53A91767066C00335848 /* mosquitto.c */,
+				B9DE53AA1767066C00335848 /* mosquitto.h */,
+				B9DE53AB1767066C00335848 /* mosquitto_internal.h */,
+				B9DE53AC1767066C00335848 /* mqtt3_protocol.h */,
+				B9DE53AD1767066C00335848 /* net_mosq.c */,
+				B9DE53AE1767066C00335848 /* net_mosq.h */,
+				B9DE53AF1767066C00335848 /* read_handle.c */,
+				B9DE53B01767066C00335848 /* read_handle.h */,
+				B9DE53B11767066C00335848 /* read_handle_client.c */,
+				B9DE53B21767066C00335848 /* read_handle_shared.c */,
+				B9DE53B31767066C00335848 /* send_client_mosq.c */,
+				B9DE53B41767066C00335848 /* send_mosq.c */,
+				B9DE53B51767066C00335848 /* send_mosq.h */,
+				B9DE53B61767066C00335848 /* thread_mosq.c */,
+				B9DE53B71767066C00335848 /* util_mosq.c */,
+				B9DE53B81767066C00335848 /* util_mosq.h */,
+				B9DE53B91767066C00335848 /* will_mosq.c */,
+				B9DE53BA1767066C00335848 /* will_mosq.h */,
+			);
+			path = libmosquitto;
+			sourceTree = "<group>";
+		};
+		B9DE53C81767069D00335848 /* mqtt_addon */ = {
+			isa = PBXGroup;
+			children = (
+				B9DE53C91767069D00335848 /* getMacAddress.h */,
+				B9DE53CA1767069D00335848 /* getMacAddress.m */,
+				B9DE53CB1767069D00335848 /* MosquittoClient.h */,
+				B9DE53CC1767069D00335848 /* MosquittoClient.m */,
+				B9DE53CD1767069D00335848 /* MosquittoMessage.h */,
+				B9DE53CE1767069D00335848 /* MosquittoMessage.m */,
+			);
+			path = mqtt_addon;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9DE53761766FFD500335848 /* WisePushIOSDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9DE539A1766FFD500335848 /* Build configuration list for PBXNativeTarget "WisePushIOSDemo" */;
+			buildPhases = (
+				B9DE53731766FFD500335848 /* Sources */,
+				B9DE53741766FFD500335848 /* Frameworks */,
+				B9DE53751766FFD500335848 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WisePushIOSDemo;
+			productName = WisePush;
+			productReference = B9DE53771766FFD500335848 /* WisePushIOSDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9DE536F1766FFD500335848 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Hwang kyoosung";
+			};
+			buildConfigurationList = B9DE53721766FFD500335848 /* Build configuration list for PBXProject "WisePushIOSDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B9DE536E1766FFD500335848;
+			productRefGroup = B9DE53781766FFD500335848 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9DE53761766FFD500335848 /* WisePushIOSDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9DE53751766FFD500335848 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9DE53851766FFD500335848 /* InfoPlist.strings in Resources */,
+				B9DE538D1766FFD500335848 /* Default.png in Resources */,
+				B9DE538F1766FFD500335848 /* Default@2x.png in Resources */,
+				B9DE53911766FFD500335848 /* Default-568h@2x.png in Resources */,
+				B9DE53971766FFD500335848 /* ViewController.xib in Resources */,
+				B9DE539F1767002600335848 /* wisepush_white.png in Resources */,
+				B9DE53D41767112600335848 /* Icon.png in Resources */,
+				B9DE53D51767112600335848 /* Icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9DE53731766FFD500335848 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9DE53871766FFD500335848 /* main.m in Sources */,
+				B9DE538B1766FFD500335848 /* AppDelegate.m in Sources */,
+				B9DE53941766FFD500335848 /* ViewController.m in Sources */,
+				B9DE53BB1767066C00335848 /* logging_mosq.c in Sources */,
+				B9DE53BC1767066C00335848 /* memory_mosq.c in Sources */,
+				B9DE53BD1767066C00335848 /* messages_mosq.c in Sources */,
+				B9DE53BE1767066C00335848 /* mosquitto.c in Sources */,
+				B9DE53BF1767066C00335848 /* net_mosq.c in Sources */,
+				B9DE53C01767066C00335848 /* read_handle.c in Sources */,
+				B9DE53C11767066C00335848 /* read_handle_client.c in Sources */,
+				B9DE53C21767066C00335848 /* read_handle_shared.c in Sources */,
+				B9DE53C31767066C00335848 /* send_client_mosq.c in Sources */,
+				B9DE53C41767066C00335848 /* send_mosq.c in Sources */,
+				B9DE53C51767066C00335848 /* thread_mosq.c in Sources */,
+				B9DE53C61767066C00335848 /* util_mosq.c in Sources */,
+				B9DE53C71767066C00335848 /* will_mosq.c in Sources */,
+				B9DE53CF1767069D00335848 /* getMacAddress.m in Sources */,
+				B9DE53D01767069D00335848 /* MosquittoClient.m in Sources */,
+				B9DE53D11767069D00335848 /* MosquittoMessage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B9DE53831766FFD500335848 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9DE53841766FFD500335848 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B9DE53951766FFD500335848 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9DE53961766FFD500335848 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9DE53981766FFD500335848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B9DE53991766FFD500335848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9DE539B1766FFD500335848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WisePush/WisePushIOSDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = WisePush/libmosquitto;
+				INFOPLIST_FILE = "WisePush/WisePushIOSDemo-Info.plist";
+				PRODUCT_NAME = WisePushIOSDemo;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B9DE539C1766FFD500335848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WisePush/WisePushIOSDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = WisePush/libmosquitto;
+				INFOPLIST_FILE = "WisePush/WisePushIOSDemo-Info.plist";
+				PRODUCT_NAME = WisePushIOSDemo;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9DE53721766FFD500335848 /* Build configuration list for PBXProject "WisePushIOSDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9DE53981766FFD500335848 /* Debug */,
+				B9DE53991766FFD500335848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9DE539A1766FFD500335848 /* Build configuration list for PBXNativeTarget "WisePushIOSDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9DE539B1766FFD500335848 /* Debug */,
+				B9DE539C1766FFD500335848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9DE536F1766FFD500335848 /* Project object */;
+}
