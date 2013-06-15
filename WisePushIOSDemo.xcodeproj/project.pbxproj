@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3ACEF76C176C187F00897627 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 3ACEF76B176C187F00897627 /* README */; };
 		B9DE537B1766FFD500335848 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DE537A1766FFD500335848 /* UIKit.framework */; };
 		B9DE537D1766FFD500335848 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DE537C1766FFD500335848 /* Foundation.framework */; };
 		B9DE537F1766FFD500335848 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DE537E1766FFD500335848 /* CoreGraphics.framework */; };
@@ -41,7 +40,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3ACEF76B176C187F00897627 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		B9DE53771766FFD500335848 /* WisePushIOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WisePushIOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9DE537A1766FFD500335848 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9DE537C1766FFD500335848 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -148,7 +146,6 @@
 				B9DE53951766FFD500335848 /* ViewController.xib */,
 				B9DE539D1767002600335848 /* Resource */,
 				B9DE53811766FFD500335848 /* Supporting Files */,
-				3ACEF76B176C187F00897627 /* README */,
 			);
 			name = WisePushIOSDemo;
 			path = WisePush;
@@ -283,7 +280,6 @@
 				B9DE539F1767002600335848 /* wisepush_white.png in Resources */,
 				B9DE53D41767112600335848 /* Icon.png in Resources */,
 				B9DE53D51767112600335848 /* Icon@2x.png in Resources */,
-				3ACEF76C176C187F00897627 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
