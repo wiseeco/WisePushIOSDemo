@@ -1,8 +1,8 @@
 //
 //  MosquittoClient.m
 //
-//  Copyright 2012 Nicholas Humfrey. All rights reserved.
-//
+//  Copyright 2012 Nicholas Humfrey.
+//  Modify at: Hwang kyoosung
 
 #import "MosquittoClient.h"
 #import "mosquitto.h"
@@ -44,7 +44,7 @@ static void on_message(struct mosquitto *mosq, void *obj, const struct mosquitto
                                                  length:message->payloadlen
                                                encoding:NSUTF8StringEncoding] autorelease];
     MosquittoClient* client = (MosquittoClient*)obj;
-    
+
     //[[client delegate] didReceiveMessage:payload topic:topic];
     [[client delegate] didReceiveMessage:mosq_msg];
     [mosq_msg release];
@@ -82,7 +82,7 @@ static void on_unsubscribe(struct mosquitto *mosq, void *obj, int message_id)
         [self setPort: 1883];
         [self setKeepAlive: 60];
         [self setCleanSession: YES]; //NOTE: this isdisable clean to keep the broker remember this client
-        
+
         mosq = mosquitto_new(cstrClientId, cleanSession, self);
         mosquitto_connect_callback_set(mosq, on_connect);
         mosquitto_disconnect_callback_set(mosq, on_disconnect);
@@ -99,18 +99,18 @@ static void on_unsubscribe(struct mosquitto *mosq, void *obj, int message_id)
 - (void) connect {
     const char *cstrHost = [host cStringUsingEncoding:NSASCIIStringEncoding];
     const char *cstrUsername = NULL, *cstrPassword = NULL;
-    
+
     if (username)
         cstrUsername = [username cStringUsingEncoding:NSUTF8StringEncoding];
-    
+
     if (password)
         cstrPassword = [password cStringUsingEncoding:NSUTF8StringEncoding];
-    
+
     // FIXME: check for errors
     mosquitto_username_pw_set(mosq, cstrUsername, cstrPassword);
-    
+
     mosquitto_connect(mosq, cstrHost, port, keepAlive);
-    
+
     // Setup timer to handle network events
     // FIXME: better way to do this - hook into iOS Run Loop select() ?
     // or run in seperate thread?
@@ -159,7 +159,7 @@ static void on_unsubscribe(struct mosquitto *mosq, void *obj, int message_id)
     const uint8_t* cstrPayload = (const uint8_t*)[payload cStringUsingEncoding:NSUTF8StringEncoding];
     size_t cstrlen = [payload lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
     mosquitto_publish(mosq, NULL, cstrTopic, cstrlen, cstrPayload, qos, retain);
-    
+
 }
 
 
@@ -189,12 +189,12 @@ static void on_unsubscribe(struct mosquitto *mosq, void *obj, int message_id)
         mosquitto_destroy(mosq);
         mosq = NULL;
     }
-    
+
     if (timer) {
         [timer invalidate];
         timer = nil;
     }
-    
+
     [super dealloc];
 }
 

@@ -1,8 +1,8 @@
 //
 //  MosquittoClient.h
 //
-//  Copyright 2012 Nicholas Humfrey. All rights reserved.
-//
+//  Copyright 2012 Nicholas Humfrey.
+//  Modify at: Hwang kyoosung
 
 #import <Foundation/Foundation.h>
 #import "MosquittoMessage.h"
@@ -28,7 +28,7 @@
     NSString *password;
     unsigned short keepAlive;
     BOOL cleanSession;
-    
+
     id<MosquittoClientDelegate> delegate;
     NSTimer *timer;
 }
